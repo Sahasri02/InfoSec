@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="body">
+<div class="searchbar">
+    Search <input type="search" placeholder="Search" id="input" [(ngModel)]="searchName">
+    
+</div>
+<button (click)="ngOnInit()" class="search-container"><i class="fa fa-search"></i></button>
+
+<div *ngFor="let user of users$ | async">
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Password: {{ user.password }}</p>
+    <p>First Name: {{ user.FirstName }}</p>
+    <p>Last Name: {{ user.LastName }}</p>
+    <p>Status: {{ user.Status }}</p>
+</div>
+
+
+<div *ngIf="isVisible">
+    <div *ngIf="foundEmployee == undefined" class="DetailsNotFound">
+        <p>Employee Details Not Found</p>
+    </div>
+</div>
+</div>

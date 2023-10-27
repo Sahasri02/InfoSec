@@ -1,0 +1,12 @@
+{
+    "users":[
+        {
+            "username" :"dsahasri",
+            "email" : "dimmula.sahasri@realpage.com",
+            "password" : "ABCCDEF",
+            "FirstName" : "Sahasri",
+            "LastName" : "Dimmula",
+            "Status" : "Active"
+        }
+    ]
+}
